@@ -47,7 +47,7 @@ const Sidebar = () => {
 
 
   return (
-    <div className='relative h-auto sm:h-[calc(100vh-100px)] bg-myWhite dark:bg-myBlack  dark:text-white   z-1  overflow-y-scroll srollHide w-[62px] sm:w-[170px] sm:pl-4  flex flex-col items-center sm:items-start' >
+    <div className='fixed top-[100px] h-auto sm:h-[calc(100vh-100px)] bg-myWhite dark:bg-myBlack  dark:text-white   z-1  overflow-y-scroll srollHide w-[62px] sm:w-[170px] sm:pl-4  flex flex-col items-center sm:items-start ' >
 
       <div className='relative mt-7'>
         <input

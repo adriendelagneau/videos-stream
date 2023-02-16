@@ -19,7 +19,7 @@ const Navbar = () => {
     };
 
     return (
-        <div className='w-[100%] h-[100px] bg-myWhite dark:bg-myBlack dark:text-myWhite flex justify-between items-center relative z-5'>
+        <div className='w-[100%] h-[100px] bg-myWhite dark:bg-myBlack dark:text-myWhite flex justify-between items-center fixed z-15'>
 
             <Link href='/' className='h-[100px] flex pl-3 items-center '>
                 <div>
