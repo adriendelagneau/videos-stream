@@ -6,7 +6,7 @@ import {format} from "timeago.js";
 const VideoCard = ({ post }) => {
 
     return (
-        <div className=' mb-10 w-[280px] h-[300px] lg:w-[330px]  cursor-pointer '>
+        <div className=' mb-10 w-[280px] h-[300px] lg:w-[330px]  cursor-pointer mx-auto'>
             <div className='h-[70%]  w-full block'>
                 <Link href={`http://localhost:3000/video/${post._id}`}>
 
@@ -23,7 +23,7 @@ const VideoCard = ({ post }) => {
             </div>
             <div className='h-[30%] w-full  flex '>
                 <div className='px-1 pt-2 h-full w-[15%]'>
-                    <Image src='/index.png' alt='' width={35} height={35}  className='rounded-full'/>
+                    <Image src={post.postByImg} alt='' width={35} height={35}  className='rounded-full'/>
                 </div>
                 <div className='pt-2 h-full w-[85%] flex flex-col gap-1'>
                     <div className='font-semibold'>{post.caption}</div>
