@@ -39,9 +39,10 @@ class APIfeatures {
     
          
     if (queryObj.title !== 'all')
-      this.query.find({ caption:  { $regex: new RegExp("^" + queryObj.title.toLowerCase(), "i") }  })
+      this.query.find({ caption: { '$regex' : queryObj.title, '$options' : 'i' } })
+    // {$regex : "son"}
 
-    console.log(queryObj.title)
+
 
       this.query.find()
       return this;
@@ -52,7 +53,7 @@ class APIfeatures {
 
 
 const getPosts = async (req, res) => {
-  console.log(req.query)
+
     try {
       const features = new APIfeatures(Post.find(), req.query)
       .filtering()
