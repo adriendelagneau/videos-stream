@@ -5,6 +5,9 @@
 .srollHide::-webkit-scrollbar {
     width: 0px;
 }
+.srollHide::-moz-scrollbar {
+  width: 0px;
+}
 
 ::-webkit-scrollbar {
     width: 0px;
