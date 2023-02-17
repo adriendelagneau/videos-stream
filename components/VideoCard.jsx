@@ -8,7 +8,7 @@ const VideoCard = ({ post }) => {
     return (
         <div className=' mb-10 w-[280px] h-[300px] lg:w-[330px]  cursor-pointer mx-auto'>
             <div className='h-[70%]  w-full block'>
-                <Link href={`${process.env.NEXTAUTH_URL}/video/${post._id}`}>
+                <Link href={`/video/${post._id}`}>
 
                 <Image
                     src={post.imgSrc}

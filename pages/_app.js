@@ -13,7 +13,7 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
       <ThemeProvider attribute='class'>
         <ScrollToTopOnRouteChange />
         <Navbar />
-          <div id="toScrollTop">
+          <div id="toScrollTop" >
             <Component {...pageProps} />
 
           </div>
