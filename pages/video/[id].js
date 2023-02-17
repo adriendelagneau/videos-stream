@@ -27,7 +27,7 @@ export default VideoDetails;
 
 export async function getServerSideProps(context) {
     const id = context.params.id; // access the ID from the context
-    const res = await axios(`http://localhost:3000/api/post/${id}`);
+    const res = await axios(`${process.env.NEXTAUTH_URL}/api/post/${id}`);
     const post = res.data.post
   
     return {
